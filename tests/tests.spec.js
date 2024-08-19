@@ -9,7 +9,7 @@ const {
 } = require("../user.js");
 
 
-test.only("Successfull authorization", async ({ page }) => {
+test.only("Successful authorization", async ({ page }) => {
   await page.goto("https://netology.ru/?modal=sign_in");
   await page.getByPlaceholder("Email").click();
   await page.getByPlaceholder("Email").fill(email);
@@ -22,7 +22,7 @@ test.only("Successfull authorization", async ({ page }) => {
    await page.screenshot({ path: "screenshotSuccessful.png", fullPage: true });
 }, 70000);
 
-test.only("Unsuccessfull authorization", async ({ page }) => {
+test.only("Unsuccessful authorization", async ({ page }) => {
   await page.goto("https://netology.ru/?modal=sign_in");
   await page.getByPlaceholder("Email").click();
   await page.getByPlaceholder("Email").fill(incorrectEmail);

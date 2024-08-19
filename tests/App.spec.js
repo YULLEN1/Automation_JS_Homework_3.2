@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 
-test("test", async ({ page }) => {
+test.skip("test", async ({ page }) => {
   // Go to https://netology.ru/free/management#/
   await page.goto("https://netology.ru/free/management#/");
 

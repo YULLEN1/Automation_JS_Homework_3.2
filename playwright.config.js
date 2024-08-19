@@ -26,7 +26,7 @@ module.exports = defineConfig({
   use: {
     launchOptions: {
     headless: false,
-    slowMo: 5000,
+    slowMo: 500,
     devtools: true,
     },
     /* Base URL to use in actions like `await page.goto('/')`. */
